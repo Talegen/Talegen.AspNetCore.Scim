@@ -1,0 +1,4303 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Talegen.AspNetCore.Scim.Schema</name>
+    </assembly>
+    <members>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Address">
+            <summary>
+            This class represents an address model.
+            </summary>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.AddressBase">
+            <summary>
+            This abstract class implements a minimal address type.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AddressBase.Home">
+            <summary>
+            Contains the home address type.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AddressBase.Other">
+            <summary>
+            Contains the other address type.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AddressBase.Untyped">
+            <summary>
+            Contains the untyped address type.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AddressBase.Work">
+            <summary>
+            Contains the work address type.
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AddressBase.Country">
+            <summary>
+            Gets or sets the country.
+            </summary>
+            <value>The country.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AddressBase.Formatted">
+            <summary>
+            Gets or sets the formatted address.
+            </summary>
+            <value>The formatted.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AddressBase.Locality">
+            <summary>
+            Gets or sets the locality.
+            </summary>
+            <value>The locality.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AddressBase.PostalCode">
+            <summary>
+            Gets or sets the postal code.
+            </summary>
+            <value>The postal code.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AddressBase.Region">
+            <summary>
+            Gets or sets the region.
+            </summary>
+            <value>The region.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AddressBase.StreetAddress">
+            <summary>
+            Gets or sets the street address.
+            </summary>
+            <value>The street address.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.AttributeDataType">
+            <summary>
+            Contains an enumerated list of attribute data types.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeDataType.string">
+            <summary>
+            The string
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeDataType.boolean">
+            <summary>
+            The boolean
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeDataType.decimal">
+            <summary>
+            The decimal
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeDataType.integer">
+            <summary>
+            The integer
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeDataType.dateTime">
+            <summary>
+            The date time
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeDataType.binary">
+            <summary>
+            The binary
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeDataType.reference">
+            <summary>
+            The reference
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeDataType.complex">
+            <summary>
+            The complex
+            </summary>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.AttributeNames">
+            <summary>
+            This class contains SCIM attribute names.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.AccountEnabled">
+            <summary>
+            The account enabled
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Active">
+            <summary>
+            The active
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Addresses">
+            <summary>
+            The addresses
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Attributes">
+            <summary>
+            The attributes
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.AuthenticationSchemes">
+            <summary>
+            The authentication schemes
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Bulk">
+            <summary>
+            The bulk
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.CanonicalValues">
+            <summary>
+            The canonical values
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.CaseExact">
+            <summary>
+            The case exact
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.ChangePassword">
+            <summary>
+            The change password
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.ChangePollingInterval">
+            <summary>
+            The change polling interval
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.ChangeWatermark">
+            <summary>
+            The change watermark
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.ChangeWatermarkLifetime">
+            <summary>
+            The change watermark lifetime
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Country">
+            <summary>
+            The country
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.CostCenter">
+            <summary>
+            The cost center
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Created">
+            <summary>
+            The created
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Department">
+            <summary>
+            The department
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Description">
+            <summary>
+            The description
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Display">
+            <summary>
+            The display
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.DisplayName">
+            <summary>
+            The display name
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Division">
+            <summary>
+            The division
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Documentation">
+            <summary>
+            The documentation
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.ElectronicMailAddresses">
+            <summary>
+            The electronic mail addresses
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.EmployeeNumber">
+            <summary>
+            The employee number
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Endpoint">
+            <summary>
+            The endpoint
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.EntityTag">
+            <summary>
+            The entity tag
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Expiry">
+            <summary>
+            The expiry
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.ExtensionEnterpriseUser2">
+            <summary>
+            The extension enterprise user2
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.ExternalIdentifier">
+            <summary>
+            The external identifier
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.FamilyName">
+            <summary>
+            The family name
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Filter">
+            <summary>
+            The filter
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.GivenName">
+            <summary>
+            The given name
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Formatted">
+            <summary>
+            The formatted
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.HonorificPrefix">
+            <summary>
+            The honorific prefix
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.HonorificSuffix">
+            <summary>
+            The honorific suffix
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Identifier">
+            <summary>
+            The identifier
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Ims">
+            <summary>
+            The ims
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.IsDeleted">
+            <summary>
+            The is deleted
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.LastModified">
+            <summary>
+            The last modified
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Locale">
+            <summary>
+            The locale
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Locality">
+            <summary>
+            The locality
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Location">
+            <summary>
+            The location
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.MailEnabled">
+            <summary>
+            The mail enabled
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.MailNickname">
+            <summary>
+            The mail nickname
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Manager">
+            <summary>
+            The manager
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.ManagerId">
+            <summary>
+            The manager identifier
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.MaximumOperations">
+            <summary>
+            The maximum operations
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.MaximumPayloadSize">
+            <summary>
+            The maximum payload size
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Members">
+            <summary>
+            The members
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Metadata">
+            <summary>
+            The metadata
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Mutability">
+            <summary>
+            The mutability
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Name">
+            <summary>
+            The name
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Nickname">
+            <summary>
+            The nickname
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.NotBefore">
+            <summary>
+            The not before
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.OnPremisesSecurityIdentifier">
+            <summary>
+            The on premises security identifier
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Organization">
+            <summary>
+            The organization
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Other">
+            <summary>
+            The other
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Password">
+            <summary>
+            The password
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Patch">
+            <summary>
+            The patch
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Path">
+            <summary>
+            The path
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.PhoneNumbers">
+            <summary>
+            The phone numbers
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Photos">
+            <summary>
+            The photos
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Plural">
+            <summary>
+            The plural
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.PostalCode">
+            <summary>
+            The postal code
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.PreferredLanguage">
+            <summary>
+            The preferred language
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Primary">
+            <summary>
+            The primary
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.ProfileUrl">
+            <summary>
+            The profile URL
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.ProxyAddresses">
+            <summary>
+            The proxy addresses
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.ReferenceTypes">
+            <summary>
+            The reference types
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Region">
+            <summary>
+            The region
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Roles">
+            <summary>
+            The roles
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Required">
+            <summary>
+            The required
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.ResourceType">
+            <summary>
+            The resource type
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Returned">
+            <summary>
+            The returned
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Schema">
+            <summary>
+            The schema
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Schemas">
+            <summary>
+            The schemas
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.SecurityEnabled">
+            <summary>
+            The security enabled
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Sort">
+            <summary>
+            The sort
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Specification">
+            <summary>
+            The specification
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.StreetAddress">
+            <summary>
+            The street address
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.SubAttributes">
+            <summary>
+            The sub attributes
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Supported">
+            <summary>
+            The supported
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.TimeZone">
+            <summary>
+            The time zone
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Title">
+            <summary>
+            The title
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Type">
+            <summary>
+            The type
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Uniqueness">
+            <summary>
+            The uniqueness
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.UserName">
+            <summary>
+            The user name
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.UserType">
+            <summary>
+            The user type
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Value">
+            <summary>
+            The value
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Version">
+            <summary>
+            The version
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeNames.Watermark">
+            <summary>
+            The watermark
+            </summary>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.AttributeScheme">
+            <summary>
+            This class represents an attribute scheme.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeScheme.dataType">
+            <summary>
+            The data type
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeScheme.dataTypeValue">
+            <summary>
+            The data type value
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeScheme.mutability">
+            <summary>
+            The mutability
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeScheme.mutabilityValue">
+            <summary>
+            The mutability value
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeScheme.returned">
+            <summary>
+            The returned
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeScheme.returnedValue">
+            <summary>
+            The returned value
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeScheme.uniqueness">
+            <summary>
+            The uniqueness
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeScheme.uniquenessValue">
+            <summary>
+            The uniqueness value
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeScheme.subAttributes">
+            <summary>
+            The sub attributes
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeScheme.subAttributesWrapper">
+            <summary>
+            The sub attributes wrapper
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeScheme.canonicalValues">
+            <summary>
+            The canonical values
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeScheme.canonicalValuesWrapper">
+            <summary>
+            The canonical values wrapper
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeScheme.referenceTypes">
+            <summary>
+            The reference types
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeScheme.referenceTypesWrapper">
+            <summary>
+            The reference types wrapper
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AttributeScheme.thisLock">
+            <summary>
+            The this lock
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.AttributeScheme.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.AttributeScheme" /> class.
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.AttributeScheme.#ctor(System.String,Talegen.AspNetCore.Scim.Schema.AttributeDataType,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.AttributeScheme" /> class.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="type">The type.</param>
+            <param name="plural">if set to <c>true</c> [plural].</param>
+            <exception cref="T:System.ArgumentNullException">name</exception>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AttributeScheme.CaseExact">
+            <summary>
+            Gets or sets a value indicating whether [case exact].
+            </summary>
+            <value><c>true</c> if [case exact]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AttributeScheme.DataType">
+            <summary>
+            Gets or sets the type of the data.
+            </summary>
+            <value>The type of the data.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AttributeScheme.DataTypeValue">
+            <summary>
+            Gets or sets the data type value.
+            </summary>
+            <value>The data type value.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AttributeScheme.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AttributeScheme.Mutability">
+            <summary>
+            Gets or sets the mutability.
+            </summary>
+            <value>The mutability.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AttributeScheme.MutabilityValue">
+            <summary>
+            Gets or sets the mutability value.
+            </summary>
+            <value>The mutability value.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AttributeScheme.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AttributeScheme.Plural">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Talegen.AspNetCore.Scim.Schema.AttributeScheme" /> is plural.
+            </summary>
+            <value><c>true</c> if plural; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AttributeScheme.Required">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Talegen.AspNetCore.Scim.Schema.AttributeScheme" /> is required.
+            </summary>
+            <value><c>true</c> if required; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AttributeScheme.Returned">
+            <summary>
+            Gets or sets the returned.
+            </summary>
+            <value>The returned.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AttributeScheme.ReturnedValue">
+            <summary>
+            Gets or sets the returned value.
+            </summary>
+            <value>The returned value.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AttributeScheme.Uniqueness">
+            <summary>
+            Gets or sets the uniqueness.
+            </summary>
+            <value>The uniqueness.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AttributeScheme.UniquenessValue">
+            <summary>
+            Gets or sets the uniqueness value.
+            </summary>
+            <value>The uniqueness value.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AttributeScheme.SubAttributes">
+            <summary>
+            Gets the sub attributes.
+            </summary>
+            <value>The sub attributes.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AttributeScheme.CanonicalValues">
+            <summary>
+            Gets the canonical values.
+            </summary>
+            <value>The canonical values.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AttributeScheme.ReferenceTypes">
+            <summary>
+            Gets the reference types.
+            </summary>
+            <value>The reference types.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.AttributeScheme.AddSubAttribute(Talegen.AspNetCore.Scim.Schema.AttributeScheme)">
+            <summary>
+            Adds the sub attribute.
+            </summary>
+            <param name="subAttribute">The sub attribute.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.AttributeScheme.AddCanonicalValues(System.String)">
+            <summary>
+            Adds the canonical values.
+            </summary>
+            <param name="canonicalValue">The canonical value.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.AttributeScheme.AddReferenceTypes(System.String)">
+            <summary>
+            Adds the reference types.
+            </summary>
+            <param name="referenceType">Type of the reference.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.AttributeScheme.OnInitialization">
+            <summary>
+            Called when [initialization].
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.AttributeScheme.OnInitialized">
+            <summary>
+            Called when [initialized].
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.AttributeScheme.AddItemFunction``1(``0,System.Collections.Generic.List{``0},System.Func{System.Boolean})">
+            <summary>
+            Adds the item function.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="item">The item.</param>
+            <param name="itemCollection">The item collection.</param>
+            <param name="containsFunction">The contains function.</param>
+            <exception cref="T:System.ArgumentNullException">item</exception>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.AuthenticationScheme">
+            <summary>
+            This class defines authentication schemes. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AuthenticationScheme.AuthenticationTypeResourceValueOpenStandardForAuthenticationBearerToken">
+            <summary>
+            The authentication type resource value open standard for authentication bearer token
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AuthenticationScheme.DescriptionOpenStandardForAuthenticationBearerToken">
+            <summary>
+            The description open standard for authentication bearer token
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AuthenticationScheme.DocumentationResourceValueOpenStandardForAuthenticationBearerToken">
+            <summary>
+            The documentation resource value open standard for authentication bearer token
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AuthenticationScheme.NameOpenStandardForAuthenticationBearerToken">
+            <summary>
+            The name open standard for authentication bearer token
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AuthenticationScheme.SpecificationResourceValueOpenStandardForAuthenticationBearerToken">
+            <summary>
+            The specification resource value open standard for authentication bearer token
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AuthenticationScheme.DocumentationResourceOpenStandardForAuthenticationBearerToken">
+            <summary>
+            The documentation resource open standard for authentication bearer token
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.AuthenticationScheme.SpecificationResourceOpenStandardForAuthenticationBearerToken">
+            <summary>
+            The specification resource open standard for authentication bearer token
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AuthenticationScheme.AuthenticationType">
+            <summary>
+            Gets or sets the type of the authentication.
+            </summary>
+            <value>The type of the authentication.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AuthenticationScheme.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AuthenticationScheme.DocumentationResource">
+            <summary>
+            Gets or sets the documentation resource.
+            </summary>
+            <value>The documentation resource.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AuthenticationScheme.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AuthenticationScheme.Primary">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Talegen.AspNetCore.Scim.Schema.AuthenticationScheme" /> is primary.
+            </summary>
+            <value><c>true</c> if primary; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.AuthenticationScheme.SpecificationResource">
+            <summary>
+            Gets or sets the specification resource.
+            </summary>
+            <value>The specification resource.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.AuthenticationScheme.CreateOpenStandardForAuthorizationBearerTokenScheme">
+            <summary>
+            Creates the open standard for authorization bearer token scheme.
+            </summary>
+            <returns>AuthenticationScheme.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.BulkRequestsFeature">
+            <summary>
+            Class BulkRequestsFeature. This class cannot be inherited. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.FeatureBase" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.FeatureBase" />
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.BulkRequestsFeature.#ctor">
+            <summary>
+            Prevents a default instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.BulkRequestsFeature" /> class from being created.
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.BulkRequestsFeature.ConcurrentOperations">
+            <summary>
+            Gets the concurrent operations.
+            </summary>
+            <value>The concurrent operations.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.BulkRequestsFeature.MaximumOperations">
+            <summary>
+            Gets the maximum operations.
+            </summary>
+            <value>The maximum operations.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.BulkRequestsFeature.MaximumPayloadSize">
+            <summary>
+            Gets the maximum size of the payload.
+            </summary>
+            <value>The maximum size of the payload.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.BulkRequestsFeature.CreateUnsupportedFeature">
+            <summary>
+            Creates the unsupported feature.
+            </summary>
+            <returns>BulkRequestsFeature.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.ComparisonOperator">
+            <summary>
+            Contains an enumerated list of comparison operators.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ComparisonOperator.BitAnd">
+            <summary>
+            The bit and
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ComparisonOperator.EndsWith">
+            <summary>
+            The ends with
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ComparisonOperator.Equals">
+            <summary>
+            The equals
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ComparisonOperator.EqualOrGreaterThan">
+            <summary>
+            The equal or greater than
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ComparisonOperator.GreaterThan">
+            <summary>
+            The greater than
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ComparisonOperator.EqualOrLessThan">
+            <summary>
+            The equal or less than
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ComparisonOperator.LessThan">
+            <summary>
+            The less than
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ComparisonOperator.Includes">
+            <summary>
+            The includes
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ComparisonOperator.IsMemberOf">
+            <summary>
+            The is member of
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ComparisonOperator.MatchesExpression">
+            <summary>
+            The matches expression
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ComparisonOperator.NotBitAnd">
+            <summary>
+            The not bit and
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ComparisonOperator.NotEquals">
+            <summary>
+            The not equals
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ComparisonOperator.NotMatchesExpression">
+            <summary>
+            The not matches expression
+            </summary>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.ConfigurationFactory`2">
+            <summary>
+            Class ConfigurationFactory.
+            </summary>
+            <typeparam name="TConfiguration">The type of the t configuration.</typeparam>
+            <typeparam name="TException">The type of the t exception.</typeparam>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.ConfigurationFactory`2.Create(System.Lazy{`0},`1@)">
+            <summary>
+            Creates the specified default configuration.
+            </summary>
+            <param name="defaultConfiguration">The default configuration.</param>
+            <param name="configurationError">The configuration error.</param>
+            <returns>TConfiguration.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.ConfigurationSectionFactory`1">
+            <summary>
+            Class ConfigurationSectionFactory. Implements the <see cref="!:Talegen.AspNetCore.Scim.Schema.ConfigurationFactory&lt;TConfiguration, System.Configuration.ConfigurationErrorsException&gt;" />
+            </summary>
+            <typeparam name="TConfiguration">The type of the t configuration.</typeparam>
+            <seealso cref="!:Talegen.AspNetCore.Scim.Schema.ConfigurationFactory&lt;TConfiguration, System.Configuration.ConfigurationErrorsException&gt;" />
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.ConfigurationSectionFactory`1.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.ConfigurationSectionFactory`1" /> class.
+            </summary>
+            <param name="sectionName">Name of the section.</param>
+            <exception cref="T:System.ArgumentNullException">sectionName</exception>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ConfigurationSectionFactory`1.SectionName">
+            <summary>
+            Gets or sets the name of the section.
+            </summary>
+            <value>The name of the section.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.ConfigurationSectionFactory`1.Create(System.Lazy{`0},System.Configuration.ConfigurationErrorsException@)">
+            <summary>
+            Creates the specified default configuration.
+            </summary>
+            <param name="defaultConfiguration">The default configuration.</param>
+            <param name="errors">The errors.</param>
+            <returns>TConfiguration.</returns>
+            <exception cref="T:System.ArgumentNullException">defaultConfiguration</exception>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Core2EnterpriseUser">
+            <summary>
+            Class Core2EnterpriseUser. This class cannot be inherited. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.Core2EnterpriseUserBase" /> class.
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.Core2EnterpriseUserBase" />
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Core2EnterpriseUser.DataContractName">
+            <summary>
+            The data contract name
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2EnterpriseUser.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.Core2EnterpriseUser" /> class.
+            </summary>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Core2EnterpriseUserBase">
+            <summary>
+            Class Core2EnterpriseUserBase. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.Core2UserBase" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.Core2UserBase" />
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2EnterpriseUserBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.Core2EnterpriseUserBase" /> class.
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2EnterpriseUserBase.EnterpriseExtension">
+            <summary>
+            Gets or sets the enterprise extension.
+            </summary>
+            <value>The enterprise extension.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Core2EnterpriseUserJsonDeserializingFactory">
+            <summary>
+            Class Core2EnterpriseUserJsonDeserializingFactory. This class cannot be inherited. Implements the <see cref="!:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory&lt;Talegen.AspNetCore.Scim.Schema.Core2EnterpriseUser&gt;" />
+            </summary>
+            <seealso cref="!:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory&lt;Talegen.AspNetCore.Scim.Schema.Core2EnterpriseUser&gt;" />
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Core2EnterpriseUserJsonDeserializingFactory.ManagerFactory">
+            <summary>
+            The manager factory
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2EnterpriseUserJsonDeserializingFactory.Create(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})">
+            <summary>
+            Creates the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>Core2EnterpriseUser.</returns>
+            <exception cref="T:System.ArgumentNullException">json</exception>
+            <exception cref="T:System.NotSupportedException"></exception>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Core2EnterpriseUserJsonDeserializingFactory.ManagerDeserializingFactory">
+            <inheritdoc />
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Core2Error">
+            <summary>
+            Class Core2Error. This class cannot be inherited. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.ErrorBase" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.ErrorBase" />
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2Error.#ctor(System.String,System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.Core2Error" /> class.
+            </summary>
+            <param name="detail">The detail.</param>
+            <param name="status">The status.</param>
+            <param name="scimType">Type of the scim.</param>
+            <remarks>See https://datatracker.ietf.org/doc/html/rfc7644#section-3.12</remarks>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Core2Group">
+            <summary>
+            Class Core2Group. This class cannot be inherited. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.Core2GroupBase" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.Core2GroupBase" />
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2Group.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.Core2Group" /> class.
+            </summary>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Core2GroupBase">
+            <summary>
+            Class Core2GroupBase. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.GroupBase" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.GroupBase" />
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Core2GroupBase.customExtension">
+            <summary>
+            The custom extension
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2GroupBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.Core2GroupBase" /> class.
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2GroupBase.CustomExtension">
+            <summary>
+            Gets the custom extension.
+            </summary>
+            <value>The custom extension.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2GroupBase.Metadata">
+            <summary>
+            Gets or sets the metadata.
+            </summary>
+            <value>The metadata.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2GroupBase.AddCustomAttribute(System.String,System.Object)">
+            <summary>
+            Adds the custom attribute.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2GroupBase.OnDeserializing(System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            This event method is fired on deserializing.
+            </summary>
+            <param name="context">Contains the stream context.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2GroupBase.OnInitialization">
+            <summary>
+            This event method is called on initialization.
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2GroupBase.ToJson">
+            <summary>
+            Converts to json.
+            </summary>
+            <returns>Dictionary&lt;System.String, System.Object&gt;.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Core2GroupJsonDeserializingFactory">
+            <summary>
+            Class Core2GroupJsonDeserializingFactory. This class cannot be inherited. Implements the <see cref="!:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory&lt;Talegen.AspNetCore.Scim.Schema.Core2Group&gt;" />
+            </summary>
+            <seealso cref="!:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory&lt;Talegen.AspNetCore.Scim.Schema.Core2Group&gt;" />
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2GroupJsonDeserializingFactory.Create(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})">
+            <summary>
+            Creates the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>Core2Group.</returns>
+            <exception cref="T:System.ArgumentNullException">json</exception>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Core2Metadata">
+            <summary>
+            Class Core2Metadata. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2Metadata.ResourceType">
+            <summary>
+            Gets or sets the type of the resource.
+            </summary>
+            <value>The type of the resource.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2Metadata.Created">
+            <summary>
+            Gets or sets the created.
+            </summary>
+            <value>The created.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2Metadata.LastModified">
+            <summary>
+            Gets or sets the last modified.
+            </summary>
+            <value>The last modified.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2Metadata.Version">
+            <summary>
+            Gets or sets the version.
+            </summary>
+            <value>The version.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2Metadata.Location">
+            <summary>
+            Gets or sets the location.
+            </summary>
+            <value>The location.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Core2ResourceType">
+            <summary>
+            Class Core2ResourceType. This class cannot be inherited. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.Resource" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.Resource" />
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Core2ResourceType.endpoint">
+            <summary>
+            The endpoint
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Core2ResourceType.endpointValue">
+            <summary>
+            The endpoint value
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Core2ResourceType.name">
+            <summary>
+            The name
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2ResourceType.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.Core2ResourceType" /> class.
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2ResourceType.Endpoint">
+            <summary>
+            Gets or sets the endpoint.
+            </summary>
+            <value>The endpoint.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2ResourceType.Metadata">
+            <summary>
+            Gets or sets the metadata.
+            </summary>
+            <value>The metadata.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2ResourceType.Schema">
+            <summary>
+            Gets or sets the schema.
+            </summary>
+            <value>The schema.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2ResourceType.InitializeEndpoint(System.String)">
+            <summary>
+            Initializes the endpoint.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2ResourceType.InitializeEndpoint">
+            <summary>
+            Initializes the endpoint.
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2ResourceType.OnDeserialized(System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            This event method is fired when deserialization.
+            </summary>
+            <param name="context">Contains the stream context.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2ResourceType.OnSerializing(System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Called when [serializing].
+            </summary>
+            <param name="context">The context.</param>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Core2ResourceTypeJsonDeserializingFactory">
+            <summary>
+            Class Core2ResourceTypeJsonDeserializingFactory. This class cannot be inherited. Implements the <see cref="!:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory&lt;Talegen.AspNetCore.Scim.Schema.Core2ResourceType&gt;" />
+            </summary>
+            <seealso cref="!:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory&lt;Talegen.AspNetCore.Scim.Schema.Core2ResourceType&gt;" />
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Core2ServiceConfiguration">
+            <summary>
+            Class Core2ServiceConfiguration. This class cannot be inherited. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.ServiceConfigurationBase" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.ServiceConfigurationBase" />
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2ServiceConfiguration.#ctor(Talegen.AspNetCore.Scim.Schema.BulkRequestsFeature,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.Core2ServiceConfiguration" /> class.
+            </summary>
+            <param name="bulkRequestsSupport">The bulk requests support.</param>
+            <param name="supportsEntityTags">if set to <c>true</c> [supports entity tags].</param>
+            <param name="supportsFiltering">if set to <c>true</c> [supports filtering].</param>
+            <param name="supportsPasswordChange">if set to <c>true</c> [supports password change].</param>
+            <param name="supportsPatching">if set to <c>true</c> [supports patching].</param>
+            <param name="supportsSorting">if set to <c>true</c> [supports sorting].</param>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2ServiceConfiguration.Metadata">
+            <summary>
+            Gets or sets the metadata.
+            </summary>
+            <value>The metadata.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Core2ServiceConfigurationJsonDeserializingFactory">
+            <summary>
+            Class Core2ServiceConfigurationJsonDeserializingFactory. This class cannot be inherited. Implements the <see cref="!:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory&lt;Talegen.AspNetCore.Scim.Schema.Core2ServiceConfiguration&gt;" />
+            </summary>
+            <seealso cref="!:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory&lt;Talegen.AspNetCore.Scim.Schema.Core2ServiceConfiguration&gt;" />
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Core2User">
+            <summary>
+            Class Core2User. This class cannot be inherited. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.Core2UserBase" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.Core2UserBase" />
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Core2UserBase">
+            <summary>
+            Class Core2UserBase. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.UserBase" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.UserBase" />
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Core2UserBase.customExtension">
+            <summary>
+            The custom extension
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2UserBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.Core2UserBase" /> class.
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2UserBase.Active">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Talegen.AspNetCore.Scim.Schema.Core2UserBase" /> is active.
+            </summary>
+            <value><c>true</c> if active; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2UserBase.Addresses">
+            <summary>
+            Gets or sets the addresses.
+            </summary>
+            <value>The addresses.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2UserBase.CustomExtension">
+            <summary>
+            Gets the custom extension.
+            </summary>
+            <value>The custom extension.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2UserBase.DisplayName">
+            <summary>
+            Gets or sets the display name.
+            </summary>
+            <value>The display name.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2UserBase.ElectronicMailAddresses">
+            <summary>
+            Gets or sets the electronic mail addresses.
+            </summary>
+            <value>The electronic mail addresses.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2UserBase.InstantMessagings">
+            <summary>
+            Gets or sets the instant messagings.
+            </summary>
+            <value>The instant messagings.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2UserBase.Locale">
+            <summary>
+            Gets or sets the locale.
+            </summary>
+            <value>The locale.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2UserBase.Metadata">
+            <summary>
+            Gets or sets the metadata.
+            </summary>
+            <value>The metadata.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2UserBase.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2UserBase.Nickname">
+            <summary>
+            Gets or sets the nickname.
+            </summary>
+            <value>The nickname.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2UserBase.PhoneNumbers">
+            <summary>
+            Gets or sets the phone numbers.
+            </summary>
+            <value>The phone numbers.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2UserBase.PreferredLanguage">
+            <summary>
+            Gets or sets the preferred language.
+            </summary>
+            <value>The preferred language.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2UserBase.Roles">
+            <summary>
+            Gets or sets the roles.
+            </summary>
+            <value>The roles.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2UserBase.TimeZone">
+            <summary>
+            Gets or sets the time zone.
+            </summary>
+            <value>The time zone.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2UserBase.Title">
+            <summary>
+            Gets or sets the title.
+            </summary>
+            <value>The title.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Core2UserBase.UserType">
+            <summary>
+            Gets or sets the type of the user.
+            </summary>
+            <value>The type of the user.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2UserBase.AddCustomAttribute(System.String,System.Object)">
+            <summary>
+            Adds the custom attribute.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2UserBase.OnDeserializing(System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            This event method is fired on deserializing.
+            </summary>
+            <param name="context">Contains the stream context.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2UserBase.OnInitialization">
+            <summary>
+            This event method is called on initialization.
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Core2UserBase.ToJson">
+            <summary>
+            Converts to json.
+            </summary>
+            <returns>Dictionary&lt;System.String, System.Object&gt;.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Core2UserJsonDeserializingFactory">
+            <summary>
+            Class Core2UserJsonDeserializingFactory. This class cannot be inherited. Implements the <see cref="!:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory&lt;Talegen.AspNetCore.Scim.Schema.Core2User&gt;" />
+            </summary>
+            <seealso cref="!:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory&lt;Talegen.AspNetCore.Scim.Schema.Core2User&gt;" />
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.DateTimeExtension">
+            <summary>
+            Class DateTimeExtension.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.DateTimeExtension.FormatStringRoundtrip">
+            <summary>
+            The format string roundtrip
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.DateTimeExtension.ToRoundtripString(System.DateTime)">
+            <summary>
+            Converts to roundtripstring.
+            </summary>
+            <param name="dateTime">The date time.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.ElectronicMailAddress">
+            <summary>
+            Class ElectronicMailAddress. This class cannot be inherited. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.ElectronicMailAddressBase" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.ElectronicMailAddressBase" />
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.ElectronicMailAddressBase">
+            <summary>
+            Class ElectronicMailAddressBase. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.TypedValue" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.TypedValue" />
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.ElectronicMailAddressBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.ElectronicMailAddressBase" /> class.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ElectronicMailAddressBase.Home">
+            <summary>
+            The home
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ElectronicMailAddressBase.Other">
+            <summary>
+            The other
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ElectronicMailAddressBase.Work">
+            <summary>
+            The work
+            </summary>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.EnumerableExtension">
+            <summary>
+            Class EnumerableExtension.
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.EnumerableExtension.CheckedCount``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Checkeds the count.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="enumeration">The enumeration.</param>
+            <returns>System.Int32.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.ErrorBase">
+            <summary>
+            Class ErrorBase. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.Schematized" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.Schematized" />
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ErrorBase.ScimType">
+            <summary>
+            Gets or sets the type of the scim.
+            </summary>
+            <value>The type of the scim.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ErrorBase.Detail">
+            <summary>
+            Gets or sets the detail.
+            </summary>
+            <value>The detail.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ErrorBase.Status">
+            <summary>
+            Gets or sets the status.
+            </summary>
+            <value>The status.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.EventToken">
+            <summary>
+            Class EventToken. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.IEventToken" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.IEventToken" />
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.EventToken.HeaderKeyAlgorithm">
+            <summary>
+            The header key algorithm
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.EventToken.JwtAlgorithmNone">
+            <summary>
+            The JWT algorithm none
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.EventToken.HeaderDefault">
+            <summary>
+            The header default
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.EventToken.TokenSerializer">
+            <summary>
+            The token serializer
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.EventToken.#ctor(System.String,System.IdentityModel.Tokens.Jwt.JwtHeader)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.EventToken" /> class.
+            </summary>
+            <param name="issuer">The issuer.</param>
+            <param name="header">The header.</param>
+            <exception cref="T:System.ArgumentNullException">issuer</exception>
+            <exception cref="T:System.ArgumentNullException">header</exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.EventToken.#ctor(System.String,System.IdentityModel.Tokens.Jwt.JwtHeader,System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.EventToken" /> class.
+            </summary>
+            <param name="issuer">The issuer.</param>
+            <param name="header">The header.</param>
+            <param name="events">The events.</param>
+            <exception cref="T:System.ArgumentNullException">events</exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.EventToken.#ctor(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.EventToken" /> class.
+            </summary>
+            <param name="issuer">The issuer.</param>
+            <param name="events">The events.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.EventToken.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.EventToken" /> class.
+            </summary>
+            <param name="serialized">The serialized.</param>
+            <exception cref="T:System.ArgumentNullException">serialized</exception>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventToken.Audience">
+            <summary>
+            Gets or sets the audience.
+            </summary>
+            <value>The audience.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventToken.Events">
+            <summary>
+            Gets the events.
+            </summary>
+            <value>The events.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventToken.Expiration">
+            <summary>
+            Gets or sets the expiration.
+            </summary>
+            <value>The expiration.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventToken.Header">
+            <summary>
+            Gets the header.
+            </summary>
+            <value>The header.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventToken.Identifier">
+            <summary>
+            Gets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventToken.IssuedAt">
+            <summary>
+            Gets the issued at.
+            </summary>
+            <value>The issued at.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventToken.Issuer">
+            <summary>
+            Gets the issuer.
+            </summary>
+            <value>The issuer.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventToken.NotBefore">
+            <summary>
+            Gets the not before.
+            </summary>
+            <value>The not before.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventToken.Subject">
+            <summary>
+            Gets or sets the subject.
+            </summary>
+            <value>The subject.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventToken.Transaction">
+            <summary>
+            Gets or sets the transaction.
+            </summary>
+            <value>The transaction.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.EventToken.ComposeDefaultHeader">
+            <summary>
+            Composes the default header.
+            </summary>
+            <returns>JwtHeader.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.EventToken.ParseAudience(System.IdentityModel.Tokens.Jwt.JwtPayload)">
+            <summary>
+            Parses the audience.
+            </summary>
+            <param name="payload">The payload.</param>
+            <exception cref="T:System.ArgumentNullException">payload</exception>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.EventToken.ParseEvents(System.IdentityModel.Tokens.Jwt.JwtPayload)">
+            <summary>
+            Parses the events.
+            </summary>
+            <param name="payload">The payload.</param>
+            <exception cref="T:System.ArgumentNullException">payload</exception>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.EventToken.ParseExpiration(System.IdentityModel.Tokens.Jwt.JwtPayload)">
+            <summary>
+            Parses the expiration.
+            </summary>
+            <param name="payload">The payload.</param>
+            <exception cref="T:System.ArgumentNullException">payload</exception>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException"></exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.EventToken.ParseIdentifier(System.IdentityModel.Tokens.Jwt.JwtPayload)">
+            <summary>
+            Parses the identifier.
+            </summary>
+            <param name="payload">The payload.</param>
+            <exception cref="T:System.ArgumentNullException">payload</exception>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.EventToken.ParseIssuedAt(System.IdentityModel.Tokens.Jwt.JwtPayload)">
+            <summary>
+            Parses the issued at.
+            </summary>
+            <param name="payload">The payload.</param>
+            <exception cref="T:System.ArgumentNullException">payload</exception>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.EventToken.ParseIssuer(System.IdentityModel.Tokens.Jwt.JwtPayload)">
+            <summary>
+            Parses the issuer.
+            </summary>
+            <param name="payload">The payload.</param>
+            <exception cref="T:System.ArgumentNullException">payload</exception>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.EventToken.ParseNotBefore(System.IdentityModel.Tokens.Jwt.JwtPayload)">
+            <summary>
+            Parses the not before.
+            </summary>
+            <param name="payload">The payload.</param>
+            <exception cref="T:System.ArgumentNullException">payload</exception>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.EventToken.ParseSubject(System.IdentityModel.Tokens.Jwt.JwtPayload)">
+            <summary>
+            Parses the subject.
+            </summary>
+            <param name="payload">The payload.</param>
+            <exception cref="T:System.ArgumentNullException">payload</exception>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.EventToken.ParseTransaction(System.IdentityModel.Tokens.Jwt.JwtPayload)">
+            <summary>
+            Parses the transaction.
+            </summary>
+            <param name="payload">The payload.</param>
+            <exception cref="T:System.ArgumentNullException">payload</exception>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.EventToken.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.EventTokenClaimTypes">
+            <summary>
+            Class EventTokenClaimTypes.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.EventTokenClaimTypes.Audience">
+            <summary>
+            The audience
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.EventTokenClaimTypes.Expiration">
+            <summary>
+            The expiration
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.EventTokenClaimTypes.Events">
+            <summary>
+            The events
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.EventTokenClaimTypes.Identifier">
+            <summary>
+            The identifier
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.EventTokenClaimTypes.IssuedAt">
+            <summary>
+            The issued at
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.EventTokenClaimTypes.Issuer">
+            <summary>
+            The issuer
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.EventTokenClaimTypes.NotBefore">
+            <summary>
+            The not before
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.EventTokenClaimTypes.Subject">
+            <summary>
+            The subject
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.EventTokenClaimTypes.Transaction">
+            <summary>
+            The transaction
+            </summary>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.EventTokenDecorator">
+            <summary>
+            Class EventTokenDecorator. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.IEventToken" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.IEventToken" />
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.EventTokenDecorator.#ctor(Talegen.AspNetCore.Scim.Schema.IEventToken)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.EventTokenDecorator" /> class.
+            </summary>
+            <param name="innerToken">The inner token.</param>
+            <exception cref="T:System.ArgumentNullException">innerToken</exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.EventTokenDecorator.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.EventTokenDecorator" /> class.
+            </summary>
+            <param name="serialized">The serialized.</param>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventTokenDecorator.Audience">
+            <summary>
+            Gets or sets the audience.
+            </summary>
+            <value>The audience.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventTokenDecorator.Events">
+            <summary>
+            Gets the events.
+            </summary>
+            <value>The events.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventTokenDecorator.Expiration">
+            <summary>
+            Gets or sets the expiration.
+            </summary>
+            <value>The expiration.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventTokenDecorator.Header">
+            <summary>
+            Gets the header.
+            </summary>
+            <value>The header.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventTokenDecorator.Identifier">
+            <summary>
+            Gets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventTokenDecorator.InnerToken">
+            <summary>
+            Gets the inner token.
+            </summary>
+            <value>The inner token.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventTokenDecorator.IssuedAt">
+            <summary>
+            Gets the issued at.
+            </summary>
+            <value>The issued at.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventTokenDecorator.Issuer">
+            <summary>
+            Gets the issuer.
+            </summary>
+            <value>The issuer.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventTokenDecorator.NotBefore">
+            <summary>
+            Gets the not before.
+            </summary>
+            <value>The not before.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventTokenDecorator.Subject">
+            <summary>
+            Gets or sets the subject.
+            </summary>
+            <value>The subject.</value>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventTokenDecorator.Transaction">
+            <summary>
+            Gets or sets the transaction.
+            </summary>
+            <value>The transaction.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.EventTokenFactory">
+            <summary>
+            Class EventTokenFactory.
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.EventTokenFactory.#ctor(System.String,System.IdentityModel.Tokens.Jwt.JwtHeader)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.EventTokenFactory" /> class.
+            </summary>
+            <param name="issuer">The issuer.</param>
+            <param name="header">The header.</param>
+            <exception cref="T:System.ArgumentNullException">issuer</exception>
+            <exception cref="T:System.ArgumentNullException">header</exception>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventTokenFactory.Header">
+            <summary>
+            Gets the header.
+            </summary>
+            <value>The header.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.EventTokenFactory.Issuer">
+            <summary>
+            Gets the issuer.
+            </summary>
+            <value>The issuer.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.EventTokenFactory.Create(System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            Creates the specified events.
+            </summary>
+            <param name="events">The events.</param>
+            <returns>IEventToken.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.ExtensionAttributeEnterpriseUser2">
+            <summary>
+            Class ExtensionAttributeEnterpriseUser2. This class cannot be inherited. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.ExtensionAttributeEnterpriseUserBase" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.ExtensionAttributeEnterpriseUserBase" />
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ExtensionAttributeEnterpriseUser2.Manager">
+            <summary>
+            Gets or sets the manager.
+            </summary>
+            <value>The manager.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.ExtensionAttributeEnterpriseUserBase">
+            <summary>
+            Class ExtensionAttributeEnterpriseUserBase.
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ExtensionAttributeEnterpriseUserBase.CostCenter">
+            <summary>
+            Gets or sets the cost center.
+            </summary>
+            <value>The cost center.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ExtensionAttributeEnterpriseUserBase.Department">
+            <summary>
+            Gets or sets the department.
+            </summary>
+            <value>The department.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ExtensionAttributeEnterpriseUserBase.Division">
+            <summary>
+            Gets or sets the division.
+            </summary>
+            <value>The division.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ExtensionAttributeEnterpriseUserBase.EmployeeNumber">
+            <summary>
+            Gets or sets the employee number.
+            </summary>
+            <value>The employee number.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ExtensionAttributeEnterpriseUserBase.Organization">
+            <summary>
+            Gets or sets the organization.
+            </summary>
+            <value>The organization.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.ExtensionAttributeWindowsAzureActiveDirectoryGroup">
+            <summary>
+            Class ExtensionAttributeWindowsAzureActiveDirectoryGroup. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ExtensionAttributeWindowsAzureActiveDirectoryGroup.ElectronicMailAddresses">
+            <summary>
+            Gets or sets the electronic mail addresses.
+            </summary>
+            <value>The electronic mail addresses.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ExtensionAttributeWindowsAzureActiveDirectoryGroup.ExternalIdentifier">
+            <summary>
+            Gets or sets the external identifier.
+            </summary>
+            <value>The external identifier.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ExtensionAttributeWindowsAzureActiveDirectoryGroup.MailEnabled">
+            <summary>
+            Gets or sets a value indicating whether [mail enabled].
+            </summary>
+            <value><c>true</c> if [mail enabled]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ExtensionAttributeWindowsAzureActiveDirectoryGroup.SecurityEnabled">
+            <summary>
+            Gets or sets a value indicating whether [security enabled].
+            </summary>
+            <value><c>true</c> if [security enabled]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Feature">
+            <summary>
+            Class Feature. This class cannot be inherited. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.FeatureBase" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.FeatureBase" />
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Feature.#ctor(System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.Feature" /> class.
+            </summary>
+            <param name="supported">if set to <c>true</c> [supported].</param>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.FeatureBase">
+            <summary>
+            Class FeatureBase.
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.FeatureBase.Supported">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Talegen.AspNetCore.Scim.Schema.FeatureBase" /> is supported.
+            </summary>
+            <value><c>true</c> if supported; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.GroupBase">
+            <summary>
+            Class GroupBase. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.Resource" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.Resource" />
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.GroupBase.DisplayName">
+            <summary>
+            Gets or sets the display name.
+            </summary>
+            <value>The display name.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.GroupBase.Members">
+            <summary>
+            Gets or sets the members.
+            </summary>
+            <value>The members.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.IChange">
+            <summary>
+            Interface IChange
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.IChange.Watermark">
+            <summary>
+            Gets or sets the watermark.
+            </summary>
+            <value>The watermark.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.IEventToken">
+            <summary>
+            Interface IEventToken
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.IEventToken.Audience">
+            <summary>
+            Gets or sets the audience.
+            </summary>
+            <value>The audience.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.IEventToken.Events">
+            <summary>
+            Gets the events.
+            </summary>
+            <value>The events.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.IEventToken.Expiration">
+            <summary>
+            Gets or sets the expiration.
+            </summary>
+            <value>The expiration.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.IEventToken.Header">
+            <summary>
+            Gets the header.
+            </summary>
+            <value>The header.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.IEventToken.Identifier">
+            <summary>
+            Gets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.IEventToken.IssuedAt">
+            <summary>
+            Gets the issued at.
+            </summary>
+            <value>The issued at.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.IEventToken.Issuer">
+            <summary>
+            Gets the issuer.
+            </summary>
+            <value>The issuer.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.IEventToken.NotBefore">
+            <summary>
+            Gets the not before.
+            </summary>
+            <value>The not before.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.IEventToken.Subject">
+            <summary>
+            Gets or sets the subject.
+            </summary>
+            <value>The subject.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.IEventToken.Transaction">
+            <summary>
+            Gets or sets the transaction.
+            </summary>
+            <value>The transaction.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.IJsonNormalizationBehavior">
+            <summary>
+            Interface IJsonNormalizationBehavior
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.IJsonNormalizationBehavior.Normalize(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})">
+            <summary>
+            Normalizes the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>IReadOnlyDictionary&lt;System.String, System.Object&gt;.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.IJsonSerializable">
+            <summary>
+            This interface defines the minimum implementation of a JSON serialized object.
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.IJsonSerializable.ToJson">
+            <summary>
+            This method is used to convert the object to JSON.
+            </summary>
+            <returns>Returns a dictionary of JSON</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.IJsonSerializable.Serialize">
+            <summary>
+            This method is used to serialize the object to JSON.
+            </summary>
+            <returns>Returns the serialized data.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.InstantMessaging">
+            <summary>
+            Class InstantMessaging. This class cannot be inherited. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.InstantMessagingBase" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.InstantMessagingBase" />
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.InstantMessagingBase">
+            <summary>
+            Class InstantMessagingBase. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.TypedValue" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.TypedValue" />
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.InstantMessagingBase.Aim">
+            <summary>
+            The aim
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.InstantMessagingBase.Gtalk">
+            <summary>
+            The gtalk
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.InstantMessagingBase.Icq">
+            <summary>
+            The icq
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.InstantMessagingBase.Msn">
+            <summary>
+            The MSN
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.InstantMessagingBase.Qq">
+            <summary>
+            The qq
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.InstantMessagingBase.Skype">
+            <summary>
+            The skype
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.InstantMessagingBase.Xmpp">
+            <summary>
+            The XMPP
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.InstantMessagingBase.Yahoo">
+            <summary>
+            The yahoo
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.InstantMessagingBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.InstantMessagingBase" /> class.
+            </summary>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.IResourceJsonDeserializingFactory`1">
+            <summary>
+            Interface IResourceJsonDeserializingFactory Extends the <see cref="T:Talegen.AspNetCore.Scim.Schema.ISchematizedJsonDeserializingFactory`1" />
+            </summary>
+            <typeparam name="TOutput">The type of the t output.</typeparam>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.ISchematizedJsonDeserializingFactory`1" />
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.ISchematizedJsonDeserializingFactory`1">
+            <summary>
+            Interface ISchematizedJsonDeserializingFactory
+            </summary>
+            <typeparam name="TOutput">The type of the t output.</typeparam>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.ISchematizedJsonDeserializingFactory`1.Create(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})">
+            <summary>
+            This method is used to create a new deserializer of the type <typeparamref name="TOutput" />.
+            </summary>
+            <param name="json">Contains the dictionary to deserialize.</param>
+            <returns>Returns a deserialized instance of type <typeparamref name="TOutput" />.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.ISystemForCrossDomainIdentityManagementConfiguration">
+            <summary>
+            Interface ISystemForCrossDomainIdentityManagementConfiguration
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ISystemForCrossDomainIdentityManagementConfiguration.AcceptLargeObjects">
+            <summary>
+            Gets a value indicating whether [accept large objects].
+            </summary>
+            <value><c>true</c> if [accept large objects]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.ISystemForCrossDomainIdentityManagementResourceIdentifier">
+            <summary>
+            Interface ISystemForCrossDomainIdentityManagementResourceIdentifier
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ISystemForCrossDomainIdentityManagementResourceIdentifier.RelativePath">
+            <summary>
+            Gets the relative path.
+            </summary>
+            <value>The relative path.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.IUnixTime">
+            <summary>
+            Interface IUnixTime
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.IUnixTime.EpochTimestamp">
+            <summary>
+            Gets the epoch timestamp.
+            </summary>
+            <value>The epoch timestamp.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.IUnixTime.ToUniversalTime">
+            <summary>
+            Converts to universaltime.
+            </summary>
+            <returns>DateTime.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory`1">
+            <summary>
+            Class JsonDeserializingFactory. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.IJsonNormalizationBehavior" />
+            </summary>
+            <typeparam name="TDataContract">The type of the t data contract.</typeparam>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.IJsonNormalizationBehavior" />
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory`1.JsonSerializerSettings">
+            <summary>
+            The json serializer settings
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory`1.JsonSerializer">
+            <summary>
+            The json serializer
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory`1.jsonNormalizer">
+            <summary>
+            The json normalizer
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory`1.AcceptLargeObjects">
+            <summary>
+            Gets or sets a value indicating whether [accept large objects].
+            </summary>
+            <value><c>true</c> if [accept large objects]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory`1.JsonNormalizer">
+            <summary>
+            Gets the json normalizer.
+            </summary>
+            <value>The json normalizer.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory`1.Create(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})">
+            <summary>
+            Creates the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>TDataContract.</returns>
+            <exception cref="T:System.ArgumentNullException">json</exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory`1.Create(System.String)">
+            <summary>
+            Creates the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>TDataContract.</returns>
+            <exception cref="T:System.ArgumentNullException">json</exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory`1.Normalize(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})">
+            <summary>
+            Normalizes the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>IReadOnlyDictionary&lt;System.String, System.Object&gt;.</returns>
+            <exception cref="T:System.ArgumentNullException">json</exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory`1.Read(System.String)">
+            <summary>
+            Reads the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>TDataContract.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.JsonFactory">
+            <summary>
+            This abstract class contains the necessary
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.JsonFactory.LargeObjectFactory">
+            <summary>
+            The large object factory
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.JsonFactory.Singleton">
+            <summary>
+            The singleton
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.JsonFactory.Instance">
+            <summary>
+            Gets the instance.
+            </summary>
+            <value>The instance.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonFactory.Create(System.String)">
+            <summary>
+            Creates the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>Dictionary&lt;System.String, System.Object&gt;.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonFactory.Create(System.String,System.Boolean)">
+            <summary>
+            Creates the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <param name="acceptLargeObjects">if set to <c>true</c> [accept large objects].</param>
+            <returns>Dictionary&lt;System.String, System.Object&gt;.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonFactory.Create(System.String[])">
+            <summary>
+            Creates the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonFactory.Create(System.String[],System.Boolean)">
+            <summary>
+            Creates the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <param name="acceptLargeObjects">if set to <c>true</c> [accept large objects].</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonFactory.Create(System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Creates the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonFactory.Create(System.Collections.Generic.Dictionary{System.String,System.Object},System.Boolean)">
+            <summary>
+            Creates the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <param name="acceptLargeObjects">if set to <c>true</c> [accept large objects].</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonFactory.Create(System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            Creates the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonFactory.Create(System.Collections.Generic.IDictionary{System.String,System.Object},System.Boolean)">
+            <summary>
+            Creates the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <param name="acceptLargeObjects">if set to <c>true</c> [accept large objects].</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonFactory.Create(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})">
+            <summary>
+            Creates the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonFactory.Create(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},System.Boolean)">
+            <summary>
+            Creates the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <param name="acceptLargeObjects">if set to <c>true</c> [accept large objects].</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonFactory.InitializeFactory">
+            <summary>
+            Initializes the factory.
+            </summary>
+            <returns>JsonFactory.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.JsonFactory.Implementation">
+            <summary>
+            This class implements the base <see cref="T:Talegen.AspNetCore.Scim.Schema.JsonFactory" /> class.
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonFactory.Implementation.Create(System.String)">
+            <summary>
+            Creates the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>Dictionary&lt;System.String, System.Object&gt;.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonFactory.Implementation.Create(System.String[])">
+            <summary>
+            Creates the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonFactory.Implementation.Create(System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Creates the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonFactory.Implementation.Create(System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            Creates the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonFactory.Implementation.Create(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})">
+            <summary>
+            Creates the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.JsonNormalizer">
+            <summary>
+            Class JsonNormalizer. This class cannot be inherited. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.JsonNormalizerTemplate" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.JsonNormalizerTemplate" />
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.JsonNormalizer.attributeNames">
+            <summary>
+            The attribute names
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.JsonNormalizer.AttributeNames">
+            <summary>
+            Gets the attribute names.
+            </summary>
+            <value>The attribute names.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonNormalizer.CollectAttributeNames">
+            <summary>
+            Collects the attribute names.
+            </summary>
+            <returns>IReadOnlyCollection&lt;System.String&gt;.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.JsonNormalizerTemplate">
+            <summary>
+            Class JsonNormalizerTemplate. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.IJsonNormalizationBehavior" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.IJsonNormalizationBehavior" />
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.JsonNormalizerTemplate.AttributeNames">
+            <summary>
+            Gets the attribute names.
+            </summary>
+            <value>The attribute names.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonNormalizerTemplate.Normalize(System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+            <summary>
+            Normalizes the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>IEnumerable&lt;KeyValuePair&lt;System.String, System.Object&gt;&gt;.</returns>
+            <exception cref="T:System.ArgumentNullException">json</exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonNormalizerTemplate.Normalize(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+            <summary>
+            Normalizes the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>IEnumerable&lt;KeyValuePair&lt;System.String, System.Object&gt;&gt;.</returns>
+            <exception cref="T:System.ArgumentNullException">json</exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonNormalizerTemplate.Normalize(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})">
+            <summary>
+            Normalizes the specified json.
+            </summary>
+            <param name="json">The json.</param>
+            <returns>IReadOnlyDictionary&lt;System.String, System.Object&gt;.</returns>
+            <exception cref="T:System.ArgumentNullException">json</exception>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.JsonSerializer">
+            <summary>
+            Class JsonSerializer. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.IJsonSerializable" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.IJsonSerializable" />
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.JsonSerializer.SerializerSettings">
+            <summary>
+            Contains the serialize settings.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.JsonSerializer.dataContractValue">
+            <summary>
+            Contains the data contract value.
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonSerializer.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.JsonSerializer" /> class.
+            </summary>
+            <param name="dataContract">Contains the data contract object to serialize.</param>
+            <exception cref="T:System.ArgumentNullException">dataContract</exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonSerializer.Serialize">
+            <summary>
+            This method is used to serialize the object to JSON.
+            </summary>
+            <returns>Returns the serialized data.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.JsonSerializer.ToJson">
+            <summary>
+            This method is used to convert the object to JSON.
+            </summary>
+            <returns>Returns a dictionary of JSON</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.LogicalOperator">
+            <summary>
+            Enum LogicalOperator
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.LogicalOperator.And">
+            <summary>
+            The and
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.LogicalOperator.Or">
+            <summary>
+            The or
+            </summary>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Manager">
+            <summary>
+            Class Manager. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Manager.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.ManagerDeserializingFactory">
+            <summary>
+            Class ManagerDeserializingFactory. Implements the <see cref="!:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory&lt;Talegen.AspNetCore.Scim.Schema.Manager&gt;" />
+            </summary>
+            <seealso cref="!:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory&lt;Talegen.AspNetCore.Scim.Schema.Manager&gt;" />
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Member">
+            <summary>
+            Class Member. This class cannot be inherited. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.MemberBase" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.MemberBase" />
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.MemberBase">
+            <summary>
+            Class MemberBase.
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.MemberBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.MemberBase" /> class.
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.MemberBase.TypeName">
+            <summary>
+            Gets or sets the name of the type.
+            </summary>
+            <value>The name of the type.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.MemberBase.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Mutability">
+            <summary>
+            Contains an enumerable list of mutability modes
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Mutability.immutable">
+            <summary>
+            The immutable
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Mutability.readOnly">
+            <summary>
+            The read only
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Mutability.readWrite">
+            <summary>
+            The read write
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Mutability.writeOnly">
+            <summary>
+            The write only
+            </summary>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Name">
+            <summary>
+            Class Name. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Name.Formatted">
+            <summary>
+            Gets or sets the formatted.
+            </summary>
+            <value>The formatted.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Name.FamilyName">
+            <summary>
+            Gets or sets the name of the family.
+            </summary>
+            <value>The name of the family.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Name.GivenName">
+            <summary>
+            Gets or sets the name of the given.
+            </summary>
+            <value>The name of the given.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Name.HonorificPrefix">
+            <summary>
+            Gets or sets the honorific prefix.
+            </summary>
+            <value>The honorific prefix.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Name.HonorificSuffix">
+            <summary>
+            Gets or sets the honorific suffix.
+            </summary>
+            <value>The honorific suffix.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.PhoneNumber">
+            <summary>
+            Class PhoneNumber. This class cannot be inherited. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.PhoneNumberBase" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.PhoneNumberBase" />
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.PhoneNumberBase">
+            <summary>
+            Class PhoneNumberBase. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.TypedValue" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.TypedValue" />
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.PhoneNumberBase.Fax">
+            <summary>
+            The fax
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.PhoneNumberBase.Home">
+            <summary>
+            The home
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.PhoneNumberBase.Mobile">
+            <summary>
+            The mobile
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.PhoneNumberBase.Other">
+            <summary>
+            The other
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.PhoneNumberBase.Pager">
+            <summary>
+            The pager
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.PhoneNumberBase.Work">
+            <summary>
+            The work
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.PhoneNumberBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.PhoneNumberBase" /> class.
+            </summary>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Photo">
+            <summary>
+            Class Photo. This class cannot be inherited. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.PhotoBase" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.PhotoBase" />
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.PhotoBase">
+            <summary>
+            Class PhotoBase. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.TypedValue" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.TypedValue" />
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.PhotoBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.PhotoBase" /> class.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.PhotoBase.Photo">
+            <summary>
+            The photo
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.PhotoBase.Thumbnail">
+            <summary>
+            The thumbnail
+            </summary>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.PluralUnsecuredEventTokenFactory">
+            <summary>
+            Class PluralUnsecuredEventTokenFactory. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.UnsecuredEventTokenFactory" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.UnsecuredEventTokenFactory" />
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.PluralUnsecuredEventTokenFactory.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.PluralUnsecuredEventTokenFactory" /> class.
+            </summary>
+            <param name="issuer">The issuer.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.PluralUnsecuredEventTokenFactory.Create(System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            Creates the specified events.
+            </summary>
+            <param name="events">The events.</param>
+            <returns>IEventToken.</returns>
+            <exception cref="T:System.ArgumentNullException">events</exception>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Properties.Resources">
+            <summary>
+            Class Resources.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Properties.Resources.resourceMan">
+            <summary>
+            The resource man
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Properties.Resources.resourceCulture">
+            <summary>
+            The resource culture
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Properties.Resources.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.Properties.Resources"/> class.
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+            <summary>
+            Gets the resource manager.
+            </summary>
+            <value>The resource manager.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+            <summary>
+            Gets or sets the culture.
+            </summary>
+            <value>The culture.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionEventTokenExpired">
+            <summary>
+              Looks up a localized string similar to The event token has expired..
+            </summary>
+            <summary>
+            Gets the exception event token expired.
+            </summary>
+            <value>The exception event token expired.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionEventTokenInvalidClaimValueTemplate">
+            <summary>
+              Looks up a localized string similar to This value is invalid for the claim, {0}: {1}..
+            </summary>
+            <summary>
+            Gets the exception event token invalid claim value template.
+            </summary>
+            <value>The exception event token invalid claim value template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionEventTokenMissingClaimTemplate">
+            <summary>
+              Looks up a localized string similar to The token is missing a value for this required claim: {0}..
+            </summary>
+            <summary>
+            Gets the exception event token missing claim template.
+            </summary>
+            <value>The exception event token missing claim template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionFilterAttributePathNotSupportedTemplate">
+            <summary>
+              Looks up a localized string similar to Filtering by this attribute is not supported: {0}..
+            </summary>
+            <summary>
+            Gets the exception filter attribute path not supported template.
+            </summary>
+            <value>The exception filter attribute path not supported template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionFilterCount">
+            <summary>
+              Looks up a localized string similar to Only a query with exactly one filter is supported..
+            </summary>
+            <summary>
+            Gets the exception filter count.
+            </summary>
+            <value>The exception filter count.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionFilterNotSupported">
+            <summary>
+              Looks up a localized string similar to The filter is not supported..
+            </summary>
+            <summary>
+            Gets the exception filter not supported.
+            </summary>
+            <value>The exception filter not supported.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionFilterOperatorNotSupportedTemplate">
+            <summary>
+              Looks up a localized string similar to This filter operator is not supported: {0}..
+            </summary>
+            <summary>
+            Gets the exception filter operator not supported template.
+            </summary>
+            <value>The exception filter operator not supported template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidAttribute">
+            <summary>
+              Looks up a localized string similar to An attribute is invalid..
+            </summary>
+            <summary>
+            Gets the exception invalid attribute.
+            </summary>
+            <value>The exception invalid attribute.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidBatch">
+            <summary>
+              Looks up a localized string similar to A batch is invalid..
+            </summary>
+            <summary>
+            Gets the exception invalid batch.
+            </summary>
+            <value>The exception invalid batch.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidContext">
+            <summary>
+              Looks up a localized string similar to The context is invalid..
+            </summary>
+            <summary>
+            Gets the exception invalid context.
+            </summary>
+            <value>The exception invalid context.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidFilterTemplate">
+            <summary>
+              Looks up a localized string similar to This filter is invalid: {0}..
+            </summary>
+            <summary>
+            Gets the exception invalid filter template.
+            </summary>
+            <value>The exception invalid filter template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidIdentifier">
+            <summary>
+              Looks up a localized string similar to An identifier is invalid..
+            </summary>
+            <summary>
+            Gets the exception invalid identifier.
+            </summary>
+            <value>The exception invalid identifier.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidIdentifierTemplate">
+            <summary>
+              Looks up a localized string similar to This identifier is invalid: {0}..
+            </summary>
+            <summary>
+            Gets the exception invalid identifier template.
+            </summary>
+            <value>The exception invalid identifier template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidOperation">
+            <summary>
+              Looks up a localized string similar to An operation is invalid..
+            </summary>
+            <summary>
+            Gets the exception invalid operation.
+            </summary>
+            <value>The exception invalid operation.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidOperationTemplate">
+            <summary>
+              Looks up a localized string similar to The operation with this identifier is not valid: {0}..
+            </summary>
+            <summary>
+            Gets the exception invalid operation template.
+            </summary>
+            <value>The exception invalid operation template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidOperatorTemplate">
+            <summary>
+              Looks up a localized string similar to This operator is not supported: {0}..
+            </summary>
+            <summary>
+            Gets the exception invalid operator template.
+            </summary>
+            <value>The exception invalid operator template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidParameters">
+            <summary>
+              Looks up a localized string similar to The parameters are invalid..
+            </summary>
+            <summary>
+            Gets the exception invalid parameters.
+            </summary>
+            <value>The exception invalid parameters.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidPathTemplate">
+            <summary>
+              Looks up a localized string similar to This path is invalid: {0}..
+            </summary>
+            <summary>
+            Gets the exception invalid path template.
+            </summary>
+            <value>The exception invalid path template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidRequest">
+            <summary>
+              Looks up a localized string similar to The request is invalid..
+            </summary>
+            <summary>
+            Gets the exception invalid request.
+            </summary>
+            <value>The exception invalid request.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidRequest1">
+            <summary>
+              Looks up a localized string similar to The request is invalid..
+            </summary>
+            <summary>
+            Gets the exception invalid request1.
+            </summary>
+            <value>The exception invalid request1.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidResource">
+            <summary>
+              Looks up a localized string similar to A resource is invalid..
+            </summary>
+            <summary>
+            Gets the exception invalid resource.
+            </summary>
+            <value>The exception invalid resource.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidResource1">
+            <summary>
+              Looks up a localized string similar to The resource is invalid..
+            </summary>
+            <summary>
+            Gets the exception invalid resource1.
+            </summary>
+            <value>The exception invalid resource1.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidResponse">
+            <summary>
+              Looks up a localized string similar to The response is invalid..
+            </summary>
+            <summary>
+            Gets the exception invalid response.
+            </summary>
+            <value>The exception invalid response.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidSearchRequestCountTemplate">
+            <summary>
+              Looks up a localized string similar to This count value is invalid: {0}.  A non-negative number is expected..
+            </summary>
+            <summary>
+            Gets the exception invalid search request count template.
+            </summary>
+            <value>The exception invalid search request count template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidSortOrderTemplate">
+            <summary>
+              Looks up a localized string similar to This sort order value is invalid: {0}..
+            </summary>
+            <summary>
+            Gets the exception invalid sort order template.
+            </summary>
+            <value>The exception invalid sort order template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidStartIndexTemplate">
+            <summary>
+              Looks up a localized string similar to This start index value is invalid: {0}.  The start index is a 1-based index..
+            </summary>
+            <summary>
+            Gets the exception invalid start index template.
+            </summary>
+            <value>The exception invalid start index template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidState">
+            <summary>
+              Looks up a localized string similar to The state is invalid..
+            </summary>
+            <summary>
+            Gets the state of the exception invalid.
+            </summary>
+            <value>The state of the exception invalid.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidStateTransition">
+            <summary>
+              Looks up a localized string similar to The requested state transition is invalid..
+            </summary>
+            <summary>
+            Gets the exception invalid state transition.
+            </summary>
+            <value>The exception invalid state transition.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionInvalidValue">
+            <summary>
+              Looks up a localized string similar to A value is invalid..
+            </summary>
+            <summary>
+            Gets the exception invalid value.
+            </summary>
+            <value>The exception invalid value.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionMethodNotSupportedTemplate">
+            <summary>
+              Looks up a localized string similar to This method is not supported: {0}..
+            </summary>
+            <summary>
+            Gets the exception method not supported template.
+            </summary>
+            <value>The exception method not supported template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionMultipleQualifiedResourceTypeIdentifiersTemplate">
+            <summary>
+              Looks up a localized string similar to This type of resource can only have one resource type schema identifier: {0}..
+            </summary>
+            <summary>
+            Gets the exception multiple qualified resource type identifiers template.
+            </summary>
+            <value>The exception multiple qualified resource type identifiers template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionNotInitializedMonitoringBehavior">
+            <summary>
+              Looks up a localized string similar to The monitoring behavior has not been properly initialized..
+            </summary>
+            <summary>
+            Gets the exception not initialized monitoring behavior.
+            </summary>
+            <value>The exception not initialized monitoring behavior.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionNotInitializedProviderBehavior">
+            <summary>
+              Looks up a localized string similar to The provider behavior has not been properly initialized..
+            </summary>
+            <summary>
+            Gets the exception not initialized provider behavior.
+            </summary>
+            <value>The exception not initialized provider behavior.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionPaginationIsNotSupportedTemplate">
+            <summary>
+              Looks up a localized string similar to Pagination is not supported for this type of resource: {0}.
+            </summary>
+            <summary>
+            Gets the exception pagination is not supported template.
+            </summary>
+            <value>The exception pagination is not supported template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionPostiveIntegerRangeTemplate">
+            <summary>
+              Looks up a localized string similar to A value greater than zero is required for this argument: {0}..
+            </summary>
+            <summary>
+            Gets the exception postive integer range template.
+            </summary>
+            <value>The exception postive integer range template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionQueryNotSupported">
+            <summary>
+              Looks up a localized string similar to The query is not supported..
+            </summary>
+            <summary>
+            Gets the exception query not supported.
+            </summary>
+            <value>The exception query not supported.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionRoleValueLengthExceededTemplate">
+            <summary>
+              Looks up a localized string similar to The following cannot be assigned to the &quot;value&quot; attribute of an Azure Active Directory role: {0}.  It exceeds the maximum permissible length for that attribute, which is this many characters: {1}..
+            </summary>
+            <summary>
+            Gets the exception role value length exceeded template.
+            </summary>
+            <value>The exception role value length exceeded template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionSingleEventExpected">
+            <summary>
+              Looks up a localized string similar to Only a single event was expected..
+            </summary>
+            <summary>
+            Gets the exception single event expected.
+            </summary>
+            <value>The exception single event expected.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionUnidentifiableOperation">
+            <summary>
+              Looks up a localized string similar to A bulk operation must have a unique identifier..
+            </summary>
+            <summary>
+            Gets the exception unidentifiable operation.
+            </summary>
+            <value>The exception unidentifiable operation.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionUnidentifiableSchema">
+            <summary>
+              Looks up a localized string similar to The schema could not be identified..
+            </summary>
+            <summary>
+            Gets the exception unidentifiable schema.
+            </summary>
+            <value>The exception unidentifiable schema.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ExceptionUnnamedAuthenticationScheme">
+            <summary>
+              Looks up a localized string similar to An authentication scheme must have a name..
+            </summary>
+            <summary>
+            Gets the exception unnamed authentication scheme.
+            </summary>
+            <value>The exception unnamed authentication scheme.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.HeaderTemplate">
+            <summary>
+              Looks up a localized string similar to {0}: {1}.
+            </summary>
+            <summary>
+            Gets the header template.
+            </summary>
+            <value>The header template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.InformationRead">
+            <summary>
+              Looks up a localized string similar to Data has been read..
+            </summary>
+            <summary>
+            Gets the information read.
+            </summary>
+            <value>The information read.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.InformationRequestProcessedTemplate">
+             <summary>
+               Looks up a localized string similar to Processing of this request was completed: {0}.  
+            
+            The status code of the response was {1}.
+             </summary>
+             <summary>
+             Gets the information request processed template.
+             </summary>
+             <value>The information request processed template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.InformationRequestReceivedTemplate">
+            <summary>
+            Looks up a localized string similar to This request was received: {0}..
+            </summary>
+            <value>The information request received template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.InformationWrote">
+            <summary>
+            Looks up a localized string similar to Data has been written..
+            </summary>
+            <value>The information wrote.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.MessageTemplate">
+            <summary>
+            Looks up a localized string similar to {0} {1}
+            {2}.
+            </summary>
+            <value>The message template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.MonitorCorrelationIdentifierPrefixTemplate">
+            <summary>
+            Looks up a localized string similar to {0}@.
+            </summary>
+            <value>The monitor correlation identifier prefix template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.MonitorOutputExceptionTemplate">
+            <summary>
+            Looks up a localized string similar to {0}: {1} (Critical? {2}).
+            </summary>
+            <value>The monitor output exception template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.MonitorOutputInformationTemplate">
+            <summary>
+            Looks up a localized string similar to {0}: {1} (Verbose? {2}).
+            </summary>
+            <value>The monitor output information template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.MonitorOutputTemplate">
+            <summary>
+            Looks up a localized string similar to {0}: {1}.
+            </summary>
+            <value>The monitor output template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ResourceIdentifierTemplate">
+            <summary>
+            Looks up a localized string similar to {0}/{1}..
+            </summary>
+            <value>The resource identifier template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.ResourceNotFoundTemplate">
+            <summary>
+            Looks up a localized string similar to Resource {0} not found..
+            </summary>
+            <value>The resource not found template.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.SeparatorHeaderValues">
+            <summary>
+            Looks up a localized string similar to ,.
+            </summary>
+            <value>The separator header values.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Properties.Resources.WarningUnexpectedWatermarkTemplate">
+            <summary>
+            Looks up a localized string similar to The supplied watermark did not match the expected watermark:
+            Supplied:
+            {0}
+            Received:
+            {1}.
+            </summary>
+            <value>The warning unexpected watermark template.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.ProtocolSchemaIdentifiers">
+            <summary>
+            Class ProtocolSchemaIdentifiers.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ProtocolSchemaIdentifiers.Error">
+            <summary>
+            The error
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ProtocolSchemaIdentifiers.OperationPatch">
+            <summary>
+            The operation patch
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ProtocolSchemaIdentifiers.VersionMessages2">
+            <summary>
+            The version messages2
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ProtocolSchemaIdentifiers.PrefixMessages">
+            <summary>
+            The prefix messages
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ProtocolSchemaIdentifiers.PrefixMessages2">
+            <summary>
+            The prefix messages2
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ProtocolSchemaIdentifiers.ResponseList">
+            <summary>
+            The response list
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ProtocolSchemaIdentifiers.RequestBulk">
+            <summary>
+            The request bulk
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ProtocolSchemaIdentifiers.ResponseBulk">
+            <summary>
+            The response bulk
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ProtocolSchemaIdentifiers.Version2Error">
+            <summary>
+            The version2 error
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ProtocolSchemaIdentifiers.Version2ListResponse">
+            <summary>
+            The version2 list response
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ProtocolSchemaIdentifiers.Version2PatchOperation">
+            <summary>
+            The version2 patch operation
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ProtocolSchemaIdentifiers.Version2BulkRequest">
+            <summary>
+            The version2 bulk request
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ProtocolSchemaIdentifiers.Version2BulkResponse">
+            <summary>
+            The version2 bulk response
+            </summary>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.QualifiedResource">
+            <summary>
+            Class QualifiedResource. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.Resource" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.Resource" />
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.QualifiedResource.ResourceSchemaIdentifierTemplateSuffix">
+            <summary>
+            The resource schema identifier template suffix
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.QualifiedResource.resourceSchemaIdentifierTemplate">
+            <summary>
+            The resource schema identifier template
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.QualifiedResource.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.QualifiedResource" /> class.
+            </summary>
+            <param name="schemaIdentifier">The schema identifier.</param>
+            <param name="resourceSchemaPrefix">The resource schema prefix.</param>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.QualifiedResource.ResourceSchemaPrefix">
+            <summary>
+            Gets or sets the resource schema prefix.
+            </summary>
+            <value>The resource schema prefix.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.QualifiedResource.AddResourceSchemaIdentifier(System.String)">
+            <summary>
+            Adds the resource schema identifier.
+            </summary>
+            <param name="resourceTypeName">Name of the resource type.</param>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.QualifiedResource.OnDeserialized(System.String,System.String)">
+            <summary>
+            Called when [deserialized].
+            </summary>
+            <param name="schemaIdentifier">The schema identifier.</param>
+            <param name="resourceSchemaPrefix">The resource schema prefix.</param>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.QualifiedResource.OnInitialized(System.String,System.String)">
+            <summary>
+            Called when [initialized].
+            </summary>
+            <param name="schemaIdentifier">The schema identifier.</param>
+            <param name="resourceSchemaPrefix">The resource schema prefix.</param>
+            <exception cref="T:System.ArgumentNullException">schemaIdentifier</exception>
+            <exception cref="T:System.ArgumentNullException">resourceSchemaPrefix</exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.QualifiedResource.TryGetResourceTypeName(System.String@)">
+            <summary>
+            Tries the name of the get resource type.
+            </summary>
+            <param name="resourceTypeName">Name of the resource type.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Resource">
+            <summary>
+            This class represents a schematized resource.
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Resource.ExternalIdentifier">
+            <summary>
+            Gets or sets the external identifier
+            </summary>
+            <value>The external identifier.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Resource.Identifier">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Resource.TryGetIdentifier(System.Uri,System.Uri@)">
+            <summary>
+            Tries the get identifier.
+            </summary>
+            <param name="baseIdentifier">The base identifier.</param>
+            <param name="identifier">The identifier.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Resource.TryGetPathIdentifier(System.Uri@)">
+            <summary>
+            Tries the get path identifier.
+            </summary>
+            <param name="pathIdentifier">The path identifier.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Returned">
+            <summary>
+            Contains an enumerated list of return modes.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Returned.always">
+            <summary>
+            The always
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Returned.default">
+            <summary>
+            The default
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Returned.never">
+            <summary>
+            The never
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Returned.request">
+            <summary>
+            The request
+            </summary>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Role">
+            <summary>
+            Class Role. This class cannot be inherited. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.RoleBase" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.RoleBase" />
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.RoleBase">
+            <summary>
+            Class RoleBase. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.TypedItem" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.TypedItem" />
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.RoleBase.Display">
+            <summary>
+            Gets or sets the display.
+            </summary>
+            <value>The display.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.RoleBase.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.SchemaConstants">
+            <summary>
+            Class SchemaConstants.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SchemaConstants.PathInterface">
+            <summary>
+            The path interface
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SchemaConstants.SeparatorSchemaIdentifierAttribute">
+            <summary>
+            The separator schema identifier attribute
+            </summary>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.SchemaIdentifiers">
+            <summary>
+            This class contains the constants of SCIM schema identifiers.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SchemaIdentifiers.Extension">
+            <summary>
+            The extension
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SchemaIdentifiers.ExtensionEnterprise2">
+            <summary>
+            The extension enterprise2
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SchemaIdentifiers.None">
+            <summary>
+            The none
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SchemaIdentifiers.PrefixTypes1">
+            <summary>
+            The prefix types1
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SchemaIdentifiers.PrefixTypes2">
+            <summary>
+            The prefix types2
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SchemaIdentifiers.VersionSchemasCore2">
+            <summary>
+            The version schemas core2
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SchemaIdentifiers.Core2EnterpriseUser">
+            <summary>
+            The core2 enterprise user
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SchemaIdentifiers.Core2Group">
+            <summary>
+            The core2 group
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SchemaIdentifiers.Core2ResourceType">
+            <summary>
+            The core2 resource type
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SchemaIdentifiers.Core2ServiceConfiguration">
+            <summary>
+            The core2 service configuration
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SchemaIdentifiers.Core2User">
+            <summary>
+            The core2 user
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SchemaIdentifiers.Core2Schema">
+            <summary>
+            The core2 schema
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SchemaIdentifiers.PrefixExtension">
+            <summary>
+            The prefix extension
+            </summary>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Schematized">
+            <summary>
+            This class represents a schematized object.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Schematized.schemas">
+            <summary>
+            Contains a list of schemas.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Schematized.schemasWrapper">
+            <summary>
+            Contains a read-only collection of schemas.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Schematized.thisLock">
+            <summary>
+            Contains the lock.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Schematized.serializer">
+            <summary>
+            Contains an instance of the JSON serializer.
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Schematized.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.Schematized" /> class.
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.Schematized.Schemas">
+            <summary>
+            Gets the schema collection.
+            </summary>
+            <value>The schemas.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Schematized.AddSchema(System.String)">
+            <summary>
+            Adds the schema.
+            </summary>
+            <param name="schemaIdentifier">The schema identifier.</param>
+            <exception cref="T:System.ArgumentNullException">schemaIdentifier</exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Schematized.Is(System.String)">
+            <summary>
+            Determines if the scheme is already in schemas
+            </summary>
+            <param name="scheme">Contains the schema to find.</param>
+            <returns>Returns a value indicating whether the scheme is found.</returns>
+            <exception cref="T:System.ArgumentNullException">scheme</exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Schematized.OnDeserialized(System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            This event method is fired when deserialization.
+            </summary>
+            <param name="context">Contains the stream context.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Schematized.OnDeserializing(System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            This event method is fired on deserializing.
+            </summary>
+            <param name="context">Contains the stream context.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Schematized.OnInitialization">
+            <summary>
+            This event method is called on initialization.
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Schematized.OnInitialized">
+            <summary>
+            This event method is called after initialization.
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Schematized.ToJson">
+            <summary>
+            This method is used to convert the object to JSON.
+            </summary>
+            <returns>Returns a dictionary of JSON</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Schematized.Serialize">
+            <summary>
+            This method is called to serialize the object.
+            </summary>
+            <returns>Returns the JSON object.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Schematized.ToString">
+            <summary>
+            This method is called to serialize the object.
+            </summary>
+            <returns>Returns the JSON object.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Schematized.TryGetPath(System.String@)">
+            <summary>
+            Tries the get path.
+            </summary>
+            <param name="path">The path.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.Schematized.TryGetSchemaIdentifier(System.String@)">
+            <summary>
+            Tries the get schema identifier.
+            </summary>
+            <param name="schemaIdentifier">The schema identifier.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.ServiceConfigurationBase">
+            <summary>
+            Class ServiceConfigurationBase. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.Schematized" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.Schematized" />
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ServiceConfigurationBase.authenticationSchemes">
+            <summary>
+            The authentication schemes
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ServiceConfigurationBase.authenticationSchemesWrapper">
+            <summary>
+            The authentication schemes wrapper
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.ServiceConfigurationBase.thisLock">
+            <summary>
+            The this lock
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.ServiceConfigurationBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.ServiceConfigurationBase" /> class.
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ServiceConfigurationBase.AuthenticationSchemes">
+            <summary>
+            Gets the authentication schemes.
+            </summary>
+            <value>The authentication schemes.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ServiceConfigurationBase.BulkRequests">
+            <summary>
+            Gets or sets the bulk requests.
+            </summary>
+            <value>The bulk requests.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ServiceConfigurationBase.DocumentationResource">
+            <summary>
+            Gets or sets the documentation resource.
+            </summary>
+            <value>The documentation resource.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ServiceConfigurationBase.EntityTags">
+            <summary>
+            Gets or sets the entity tags.
+            </summary>
+            <value>The entity tags.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ServiceConfigurationBase.Filtering">
+            <summary>
+            Gets or sets the filtering.
+            </summary>
+            <value>The filtering.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ServiceConfigurationBase.PasswordChange">
+            <summary>
+            Gets or sets the password change.
+            </summary>
+            <value>The password change.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ServiceConfigurationBase.Patching">
+            <summary>
+            Gets or sets the patching.
+            </summary>
+            <value>The patching.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.ServiceConfigurationBase.Sorting">
+            <summary>
+            Gets or sets the sorting.
+            </summary>
+            <value>The sorting.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.ServiceConfigurationBase.AddAuthenticationScheme(Talegen.AspNetCore.Scim.Schema.AuthenticationScheme)">
+            <summary>
+            Adds the authentication scheme.
+            </summary>
+            <param name="authenticationScheme">The authentication scheme.</param>
+            <exception cref="T:System.ArgumentNullException">authenticationScheme</exception>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.ServiceConfigurationBase.OnDeserialized(System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            This event method is fired when deserialization.
+            </summary>
+            <param name="context">Contains the stream context.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.ServiceConfigurationBase.OnDeserializing(System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            This event method is fired on deserializing.
+            </summary>
+            <param name="context">Contains the stream context.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.ServiceConfigurationBase.OnInitialization">
+            <summary>
+            This event method is called on initialization.
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.ServiceConfigurationBase.OnInitialized">
+            <summary>
+            This event method is called after initialization.
+            </summary>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.SingularEventToken">
+            <summary>
+            Class SingularEventToken. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.EventTokenDecorator" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.EventTokenDecorator" />
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.SingularEventToken.#ctor(Talegen.AspNetCore.Scim.Schema.IEventToken)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.SingularEventToken" /> class.
+            </summary>
+            <param name="innerToken">The inner token.</param>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.SingularEventToken.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.SingularEventToken" /> class.
+            </summary>
+            <param name="serialized">The serialized.</param>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.SingularEventToken.Event">
+            <summary>
+            Gets the event.
+            </summary>
+            <value>The event.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.SingularEventToken.SchemaIdentifier">
+            <summary>
+            Gets the schema identifier.
+            </summary>
+            <value>The schema identifier.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.SingularUnsecuredEventTokenFactory">
+            <summary>
+            Class SingularUnsecuredEventTokenFactory. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.UnsecuredEventTokenFactory" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.UnsecuredEventTokenFactory" />
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.SingularUnsecuredEventTokenFactory.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.SingularUnsecuredEventTokenFactory" /> class.
+            </summary>
+            <param name="issuer">The issuer.</param>
+            <param name="eventSchemaIdentifier">The event schema identifier.</param>
+            <exception cref="T:System.ArgumentNullException">eventSchemaIdentifier</exception>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.SingularUnsecuredEventTokenFactory.EventSchemaIdentifier">
+            <summary>
+            Gets or sets the event schema identifier.
+            </summary>
+            <value>The event schema identifier.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.SingularUnsecuredEventTokenFactory.Create(System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            Creates the specified events.
+            </summary>
+            <param name="events">The events.</param>
+            <returns>IEventToken.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.SpecificationVersion">
+            <summary>
+            Class SpecificationVersion.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SpecificationVersion.VersionOneOhValue">
+            <summary>
+            The version one oh value
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SpecificationVersion.VersionOneOneValue">
+            <summary>
+            The version one one value
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SpecificationVersion.VersionTwoOhValue">
+            <summary>
+            The version two oh value
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SpecificationVersion.VersionTwoOhOneValue">
+            <summary>
+            The version two oh one value
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.SpecificationVersion.VersionOneOh">
+            <summary>
+            Gets the version one oh.
+            </summary>
+            <value>The version one oh.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.SpecificationVersion.VersionOneOne">
+            <summary>
+            Gets the version one one.
+            </summary>
+            <value>The version one one.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.SpecificationVersion.VersionTwoOhOne">
+            <summary>
+            Gets the version two oh one.
+            </summary>
+            <value>The version two oh one.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.SpecificationVersion.VersionTwoOh">
+            <summary>
+            Gets the version two oh.
+            </summary>
+            <value>The version two oh.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.SystemForCrossDomainIdentityManagementConfigurationSection">
+            <summary>
+            Class SystemForCrossDomainIdentityManagementConfigurationSection. Implements the <see cref="T:System.Configuration.ConfigurationSection" /> Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.ISystemForCrossDomainIdentityManagementConfiguration" />
+            </summary>
+            <seealso cref="T:System.Configuration.ConfigurationSection" />
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.ISystemForCrossDomainIdentityManagementConfiguration" />
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SystemForCrossDomainIdentityManagementConfigurationSection.DefaultValueAcceptLargeObjects">
+            <summary>
+            The default value accept large objects
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SystemForCrossDomainIdentityManagementConfigurationSection.NameSection">
+            <summary>
+            The name section
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SystemForCrossDomainIdentityManagementConfigurationSection.PropertyNameAcceptLargeObjects">
+            <summary>
+            The property name accept large objects
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SystemForCrossDomainIdentityManagementConfigurationSection.DefaultAcceptLargeObjects">
+            <summary>
+            The default accept large objects
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SystemForCrossDomainIdentityManagementConfigurationSection.DefaultConfiguration">
+            <summary>
+            The default configuration
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SystemForCrossDomainIdentityManagementConfigurationSection.Factory">
+            <summary>
+            The factory
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SystemForCrossDomainIdentityManagementConfigurationSection.Singleton">
+            <summary>
+            The singleton
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.SystemForCrossDomainIdentityManagementConfigurationSection.#ctor">
+            <summary>
+            Prevents a default instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.SystemForCrossDomainIdentityManagementConfigurationSection" /> class from being created.
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.SystemForCrossDomainIdentityManagementConfigurationSection.Instance">
+            <summary>
+            Gets the instance.
+            </summary>
+            <value>The instance.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.SystemForCrossDomainIdentityManagementConfigurationSection.AcceptLargeObjects">
+            <summary>
+            Gets a value indicating whether [accept large objects].
+            </summary>
+            <value><c>true</c> if [accept large objects]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.SystemForCrossDomainIdentityManagementConfigurationSection.AcceptLargeObjectsValue">
+            <summary>
+            Gets the accept large objects value.
+            </summary>
+            <value>The accept large objects value.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.SystemForCrossDomainIdentityManagementConfigurationSection.Initialize">
+            <summary>
+            Initializes this instance.
+            </summary>
+            <returns>ISystemForCrossDomainIdentityManagementConfiguration.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.SystemForCrossDomainIdentityManagementResourceIdentifier">
+            <summary>
+            Class SystemForCrossDomainIdentityManagementResourceIdentifier. This class cannot be inherited. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.ISystemForCrossDomainIdentityManagementResourceIdentifier" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.ISystemForCrossDomainIdentityManagementResourceIdentifier" />
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SystemForCrossDomainIdentityManagementResourceIdentifier.SeparatorSegments">
+            <summary>
+            The separator segments
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.SystemForCrossDomainIdentityManagementResourceIdentifier.SeparatorsSegments">
+            <summary>
+            The separators segments
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.SystemForCrossDomainIdentityManagementResourceIdentifier.#ctor(System.Uri)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.SystemForCrossDomainIdentityManagementResourceIdentifier" /> class.
+            </summary>
+            <param name="identifier">The identifier.</param>
+            <exception cref="T:System.ArgumentNullException">identifier</exception>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.SystemForCrossDomainIdentityManagementResourceIdentifier.RelativePath">
+            <summary>
+            Gets the relative path.
+            </summary>
+            <value>The relative path.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.TrustedJsonFactory">
+            <summary>
+            Class TrustedJsonFactory. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.JsonFactory" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.JsonFactory" />
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.TrustedJsonFactory.Create(System.String)">
+            <summary>
+            This method is used to serialize an object to a dis
+            </summary>
+            <param name="json">Contains the JSON to convert to dictionary.</param>
+            <returns>Returns a dictionary of key value pairs derived from the JSON model.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.TrustedJsonFactory.Create(System.String[])">
+            <summary>
+            This method is used to serialize an array of JSON values into a JSON model.
+            </summary>
+            <param name="input">Contains the JSON string values.</param>
+            <returns>Returns a serialized JSON model.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.TrustedJsonFactory.Create(System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            This method is used to serialize a dictionary of key value pairs into a JSON model.
+            </summary>
+            <param name="input">Contains the dictionary to serialize.</param>
+            <returns>Returns a JSON model.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.TrustedJsonFactory.Create(System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            This method is used to serialize a dictionary of key value pairs into a JSON model.
+            </summary>
+            <param name="input">Contains the dictionary to serialize.</param>
+            <returns>Returns a JSON model.</returns>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.TrustedJsonFactory.Create(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})">
+            <summary>
+            This method is used to serialize a dictionary of key value pairs into a JSON model.
+            </summary>
+            <param name="input">Contains the dictionary to serialize.</param>
+            <returns>Returns a JSON model.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.TypedItem">
+            <summary>
+            This abstract class contains the base for all schema type model classes.
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.TypedItem.ItemType">
+            <summary>
+            Gets or sets the item type.
+            </summary>
+            <value>The type of the item.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.TypedItem.Primary">
+            <summary>
+            Gets or sets a value indicating whether the type is primary.
+            </summary>
+            <value><c>true</c> if primary; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.TypedValue">
+            <summary>
+            Class TypedValue. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.TypedItem" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.TypedItem" />
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.TypedValue.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Types">
+            <summary>
+            This static class contains all the SCIM types supported within the service schema.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Types.Group">
+            <summary>
+            The group
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Types.ResourceType">
+            <summary>
+            The resource type
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Types.ServiceProviderConfiguration">
+            <summary>
+            The service provider configuration
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Types.User">
+            <summary>
+            The user
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Types.Schema">
+            <summary>
+            The schema
+            </summary>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.TypeScheme">
+            <summary>
+            Class TypeScheme. This class cannot be inherited. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.Resource" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.Resource" />
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.TypeScheme.attributes">
+            <summary>
+            The attributes
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.TypeScheme.attributesWrapper">
+            <summary>
+            The attributes wrapper
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.TypeScheme.thisLock">
+            <summary>
+            The this lock
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.TypeScheme.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.TypeScheme" /> class.
+            </summary>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.TypeScheme.Attributes">
+            <summary>
+            Gets the attributes.
+            </summary>
+            <value>The attributes.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.TypeScheme.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.TypeScheme.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.TypeScheme.Metadata">
+            <summary>
+            Gets or sets the metadata.
+            </summary>
+            <value>The metadata.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.TypeScheme.AddAttribute(Talegen.AspNetCore.Scim.Schema.AttributeScheme)">
+            <summary>
+            Adds the attribute.
+            </summary>
+            <param name="attribute">The attribute.</param>
+            <exception cref="T:System.ArgumentNullException">attribute</exception>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.TypeScheme.OnDeserialized(System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            This event method is fired when deserialization.
+            </summary>
+            <param name="context">Contains the stream context.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.TypeScheme.OnDeserializing(System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            This event method is fired on deserializing.
+            </summary>
+            <param name="context">Contains the stream context.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.TypeScheme.OnInitialization">
+            <summary>
+            This event method is called on initialization.
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.TypeScheme.OnInitialized">
+            <summary>
+            This event method is called after initialization.
+            </summary>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.TypeSchemeJsonDeserializingFactory">
+            <summary>
+            Class TypeSchemeJsonDeserializingFactory. This class cannot be inherited. Implements the <see cref="!:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory&lt;Talegen.AspNetCore.Scim.Schema.TypeScheme&gt;" />
+            </summary>
+            <seealso cref="!:Talegen.AspNetCore.Scim.Schema.JsonDeserializingFactory&lt;Talegen.AspNetCore.Scim.Schema.TypeScheme&gt;" />
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.Uniqueness">
+            <summary>
+            Contains an enumerated list of uniqueness types.
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Uniqueness.none">
+            <summary>
+            The none
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Uniqueness.server">
+            <summary>
+            The server
+            </summary>
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.Uniqueness.global">
+            <summary>
+            The global
+            </summary>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.UnixTime">
+            <summary>
+            Class UnixTime. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.IUnixTime" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.IUnixTime" />
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.UnixTime.Epoch">
+            <summary>
+            The epoch
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.UnixTime.#ctor(System.Int64)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.UnixTime" /> class.
+            </summary>
+            <param name="epochTimestamp">The epoch timestamp.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.UnixTime.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.UnixTime" /> class.
+            </summary>
+            <param name="epochTimestamp">The epoch timestamp.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.UnixTime.#ctor(System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.UnixTime" /> class.
+            </summary>
+            <param name="epochTimestamp">The epoch timestamp.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.UnixTime.#ctor(System.TimeSpan)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.UnixTime" /> class.
+            </summary>
+            <param name="sinceEpoch">The since epoch.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.UnixTime.#ctor(System.DateTime)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.UnixTime" /> class.
+            </summary>
+            <param name="dateTime">The date time.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.UnixTime.ToUniversalTime">
+            <summary>
+            Converts to universal time.
+            </summary>
+            <returns>DateTime.</returns>
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.UnixTime.EpochTimestamp">
+            <summary>
+            Gets the epoch timestamp.
+            </summary>
+            <value>The epoch timestamp.</value>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.UnixTime.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.UnsecuredEventTokenFactory">
+            <summary>
+            Class UnsecuredEventTokenFactory. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.EventTokenFactory" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.EventTokenFactory" />
+        </member>
+        <member name="F:Talegen.AspNetCore.Scim.Schema.UnsecuredEventTokenFactory.UnsecuredTokenHeader">
+            <summary>
+            The unsecured token header
+            </summary>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.UnsecuredEventTokenFactory.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Talegen.AspNetCore.Scim.Schema.UnsecuredEventTokenFactory" /> class.
+            </summary>
+            <param name="issuer">The issuer.</param>
+        </member>
+        <member name="M:Talegen.AspNetCore.Scim.Schema.UnsecuredEventTokenFactory.ComposeHeader">
+            <summary>
+            Composes the header.
+            </summary>
+            <returns>JwtHeader.</returns>
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.User">
+            <summary>
+            Class User. This class cannot be inherited. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.UserBase" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.UserBase" />
+        </member>
+        <member name="T:Talegen.AspNetCore.Scim.Schema.UserBase">
+            <summary>
+            Class UserBase. Implements the <see cref="T:Talegen.AspNetCore.Scim.Schema.Resource" />
+            </summary>
+            <seealso cref="T:Talegen.AspNetCore.Scim.Schema.Resource" />
+        </member>
+        <member name="P:Talegen.AspNetCore.Scim.Schema.UserBase.UserName">
+            <summary>
+            Gets or sets the name of the user.
+            </summary>
+            <value>The name of the user.</value>
+        </member>
+    </members>
+</doc>
